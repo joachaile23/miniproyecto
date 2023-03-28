@@ -13,3 +13,13 @@ body
     color:#00337C;
     font-size: 65px;
 }
+
+#cuadro
+{
+    background-color: #FFFBEB;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
