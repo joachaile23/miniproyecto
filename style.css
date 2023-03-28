@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap');
+
 body
 {
-    background-color: azure;
+    background-image: url(./assets/1920x1080-Gradiente-blanco-azul.-Padre-de-gradiente-Blue-HD-Wallpaper-1920x1080-1.png);
 }
 
 #titulo
 {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color:crimson
+    font-family:'Orbitron';
+    color:#00337C;
+    font-size: 65px;
 }
