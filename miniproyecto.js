@@ -10,10 +10,18 @@ function Sumar()
 {
     conteo = conteo + 1
     contador.innerHTML = conteo
+    if(conteo >= 1)
+    {
+        contador.style.color = 'green'
+    }
 }
 
 function Restar()
 {
     conteo = conteo - 1
     contador.innerHTML = conteo
+    if(conteo < 0)
+    {
+        contador.style.color = 'red'
+    }
 }

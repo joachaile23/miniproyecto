@@ -20,7 +20,7 @@ body
 
 #contador 
 {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Orbitron', cursive;
     display: flex;
     height: 200px;
     width: 400px;
@@ -33,37 +33,40 @@ body
     border-radius: 150px;
 }
 
-#aumentar 
+#aumentar
 {
-    display: flex;
-    background-color: #00337C;
-    color: white;
-    height: 50px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 50px;
-    font-size: 30px;
+    border: none;
+    background-color: transparent;
     padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+aumentar:hover 
+{
+    background-color: white;
+    cursor: pointer;
 }
 
 #disminuir
 {
-    display: flex;
-    background-color: #00337C;
-    color: white;
-    height: 50px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 50px;
-    font-size: 30px;
+    border: none;
+    background-color: transparent;
     padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+disminuir:hover 
+{
+    background-color: white;
+    cursor: pointer;
 }
 
 #botones
 {
     display: flex;
+    margin: 15px;
 }
