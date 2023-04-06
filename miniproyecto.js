@@ -1,10 +1,20 @@
 const contador = document.getElementById("contador")
 const aumentar = document.getElementById("aumentar")
-aumentar.addEventListener("click", Sumar)
+const sectionContador = document.getElementById("sectionContador")
+const sectionCronometro = document.getElementById("sectionCronometro")
+aumentar.addEventListener('click', Sumar)
 const disminuir = document.getElementById("disminuir")
-disminuir.addEventListener("click", Restar)
+disminuir.addEventListener('click', Restar)
 const reiniciarContador = document.getElementById("reiniciar")
 reiniciarContador.addEventListener("click", Reiniciar)
+const botonCronometro = document.getElementById("botonCronometro")
+botonCronometro.addEventListener('click', iniciarCronometro)
+
+function iniciarApp()
+{
+    sectionCronometro.style.display = 'none'
+    sectionContador.style.display = 'flex'    
+}
 
 let conteo = 0
 
@@ -42,3 +52,11 @@ function Reiniciar()
     contador.style.color = 'black'
     contador.innerHTML = 0
 }
+
+function iniciarCronometro()
+{
+    sectionContador.style.display = 'none'
+    sectionCronometro.style.display = 'flex'
+}
+
+window.addEventListener('load', iniciarApp)

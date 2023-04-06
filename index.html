@@ -8,13 +8,25 @@
     <title> MINIPROYECTO </title>
 </head>
 <body>
-    <h1 id="titulo"> CONTADOR </h1>  
-    <p id="contador">  </p>
-        <div id="contenedorBotones">
+    <div id="divUtilidades">
+        <button id="botonContador"> CONTADOR </button>
+        <button id="botonAlarma"> ALARMA</button>
+        <button id="botonCronometro"> CRONÓMETRO </button>
+    </div>    
+
+    <section id="sectionContador">
+        <h1 id="tituloContador"> CONTADOR </h1>  
+        <p id="contador">  </p>
+        <div id="divBotonesContenedor">
             <button id="disminuir"> <img src="./assets/menos.png"  alt="button icon"> </button>
             <button id="aumentar"> <img src="./assets/mas.png"  alt="button icon"> </button>
         </div>
             <button id="reiniciar"> REINICIAR </button>
+    </section>   
+
+    <section id="sectionCronometro">
+        <h1 id="tituloCronometro"> CONTADOR </h1> 
+    </section>    
 
     <script src = "miniproyecto.js"></script>
 </body>

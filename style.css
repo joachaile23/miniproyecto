@@ -3,41 +3,45 @@
 body 
 {
     background-image: url(./assets/1920x1080-Gradiente-blanco-azul.-Padre-de-gradiente-Blue-HD-Wallpaper-1920x1080-1.png);
+    display: grid;
+}
+
+
+#sectionContador 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#titulo
+#tituloContador
 {
-    display: flex;
-    justify-content: center;
     font-family:'Orbitron';
     color:#00337C;
-    font-size: 75px;
-    padding: 10px;
+    font-size: 100px;
+    margin-top: 75px;
 }
 
 #contador 
 {
-    font-family: 'Orbitron';
     display: flex;
-    height: 200px;
-    width: 400px;
+    font-family: Orbitron;
+    height: 220px;
+    width: 480px;
     font-size: 150px;
-    background-color: #B9F3FC;
+    background-color: rgb(185, 243, 252);
     padding: 10px;
+    margin: 5px;
+    border-radius: 150px;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    border-radius: 150px;
 }
 
 #aumentar
 {
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     font-size: 16px;
     color: #333;
@@ -47,16 +51,10 @@ body
 {
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     font-size: 16px;
     color: #333;
-}
-
-#contenedorBotones
-{
-    display: flex;
-    margin: 15px;
 }
 
 #reiniciar 
@@ -72,4 +70,73 @@ body
     border-radius: 30px;
     background-color: rgb(185, 241, 152);
     justify-content: center;
+}
+
+#divUtilidades 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#313552;
+    height: 50px;
+    margin: 3px;
+    padding: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+#botonCronometro {
+    font-family: 'Orbitron', cursive;
+    display: flex;
+    width: 215px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #219F94;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    margin-right: 55px;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+}
+
+#botonAlarma 
+{
+    font-family: 'Orbitron', cursive;;
+    display: flex;
+    width: 215px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #219F94;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    color: #EEEEEE;
+    border: none;
+    margin-right: 55px;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+}
+
+#botonContador
+{
+    font-family: 'Orbitron', cursive;
+    display: flex;
+    width: 215px;
+    height: 50px;;
+    border-radius: 10px;
+    background-color: #219F94;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    color: #EEEEEE;
+    border: none;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+    margin-right: 55px;
+}
+
+#sectionCronometro
+{
+    display: flex;
 }
