@@ -31,10 +31,11 @@ body
     font-size: 150px;
     background-color: rgb(185, 243, 252);
     padding: 10px;
-    margin: 5px;
+    margin: 8px;
     border-radius: 150px;
     justify-content: center;
     align-items: center;
+    margin-top: -12px;
 }
 
 #aumentar
@@ -59,7 +60,7 @@ body
 
 #reiniciar 
 {
-    font-family: 'Orbitron', cursive;
+    font-family: 'Orbitron';
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@ body
     height: 50px;
     border: none;
     border-radius: 30px;
-    background-color: rgb(185, 241, 152);
+    background-color: red;
     justify-content: center;
 }
 
@@ -77,12 +78,9 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:#313552;
     height: 50px;
     margin: 3px;
     padding: 10px;
-    border: 2px solid #EEEEEE;
-    border-radius: 10px;
 }
 
 #botonCronometro {
@@ -91,7 +89,7 @@ body
     width: 215px;
     height: 50px;
     border-radius: 10px;
-    background-color: #219F94;
+    background-color: #00337C;
     align-items: center;
     justify-content: center;
     color: #EEEEEE;
@@ -107,7 +105,7 @@ body
     width: 215px;
     height: 50px;
     border-radius: 10px;
-    background-color: #219F94;
+    background-color: #00337C;
     align-items: center;
     justify-content: center;
     border-color: white;
@@ -125,7 +123,7 @@ body
     width: 215px;
     height: 50px;;
     border-radius: 10px;
-    background-color: #219F94;
+    background-color: #00337C;
     align-items: center;
     justify-content: center;
     border-color: white;
@@ -137,6 +135,56 @@ body
 }
 
 #sectionCronometro
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#tituloCronometro
+{
+    font-family:'Orbitron';
+    color:#00337C;
+    font-size: 100px;
+    margin-top: 75px;
+}
+
+#cronometro
+{
+    display: flex;
+    font-family: Orbitron;
+    height: 220px;
+    width: 480px;
+    font-size: 75px;
+    background-color: rgb(185, 243, 252);
+    padding: 10px;
+    margin: 8px;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12px;    
+}
+
+.botonesCronometro
+{
+    display: flex;
+    font-family: 'Orbitron', cursive;
+    width: 215px;
+    height: 50px;;
+    border-radius: 10px;
+    background-color: #00337C;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    color: #EEEEEE;
+    border: none;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+    margin: 25px;
+}
+
+#divBotonesCronometro
 {
     display: flex;
 }
