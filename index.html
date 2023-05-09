@@ -8,36 +8,60 @@
     <title> MINIPROYECTO </title>
 </head>
 <body>
-    <div id="divUtilidades">
-        <button id="botonContador"> CONTADOR </button>
-        <button id="botonAlarma"> ALARMA</button>
-        <button id="botonCronometro"> CRONÓMETRO </button>
-    </div>    
+    <section id="sectionHerramientas">
 
-    <section id="sectionContador">
-        <h1 id="tituloContador"> CONTADOR </h1>  
-        <p id="contador">  </p>
+        <h2 id="seleccionarHerramienta"> Selecciona una herramienta: </h2>
+
+        <div id="divUtilidades">
+            <button class="botonesUtilidad" id="botonContador"> CONTADOR </button>
+            <button class="botonesUtilidad" id="botonAlarma"> RELOJ </button>
+            <button class="botonesUtilidad" id="botonCronometro"> CRONÓMETRO </button>
+        </div>   
+
+    </section> 
+
+
+    <section class="secciones" id="sectionContador">
+        <h1 class="titulos" id="tituloContador"> CONTADOR </h1>  
+
+        <div class="contenedores" id="contador">  </div>
+
         <div id="divBotonesContenedor">
-            <button id="disminuir"> <img src="./assets/menos.png"  alt="button icon"> </button>
-            <button id="aumentar"> <img src="./assets/mas.png"  alt="button icon"> </button>
+            <button class="botonesContador" id="disminuir"> <img src="./assets/menos.png"  alt="button icon"> </button>
+            <button class="botonesContador" id="aumentar"> <img src="./assets/mas.png"  alt="button icon"> </button>
         </div>
             <button id="reiniciar"> REINICIAR </button>
-    </section>   
 
-    <section id="sectionCronometro">
-        <h1 id="tituloCronometro"> CRONÓMETRO </h1> 
-        <div id="cronometro">
+    </section>  
+    
+    <section class="secciones" id="sectionAlarma">
+
+        <h1 class="titulos" id="tituloAlarma"> RELOJ </h1>
+
+        <div class="contenedores" id="alarma"> </div>
+
+        <div id="divBotonesAlarma"></div>
+
+    </section>
+
+    <section class="secciones" id="sectionCronometro">
+
+        <h1 class="titulos" id="tituloCronometro"> CRONÓMETRO </h1> 
+
+        <div class="contenedores" id="cronometro">
             <span id="horas">00</span>:
             <span id="minutos">00</span>:
             <span id="segundos">00</span>
         </div>
+
         <div id="divBotonesCronometro">
           <button class="botonesCronometro" id="botonIniciar">Iniciar</button>
           <button class="botonesCronometro" id="botonDetener">Detener</button>
           <button class="botonesCronometro" id="botonResetear">Reiniciar</button>
         </div>
+        
     </section>    
 
-    <script src = "miniproyecto.js"></script>
+    <script src="miniproyecto.js"></script>
 </body>
 </html>
