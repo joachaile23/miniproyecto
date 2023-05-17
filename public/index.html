@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> MINIPROYECTO </title>
+</head>
+<body>
+    <section id="iniciarSesion">
+        <h1>INTRODUZCA NOMBRE DE USUARIO</h1>
+        <input type="text" id="nombreUsuario">
+        <input type="button" value="Confirmar" id="botonConfirmar">
+    </section>
+
+    <section id="sectionHerramientas">
+        <p id="usuario"></p>
+        <h2 id="seleccionarHerramienta"> Selecciona una herramienta: </h2>
+
+        <div id="divUtilidades">
+            <button class="botonesUtilidad" id="botonContador"> CONTADOR </button>
+            <button class="botonesUtilidad" id="botonReloj"> RELOJ </button>
+            <button class="botonesUtilidad" id="botonCronometro"> CRONÓMETRO </button>
+        </div>   
+
+    </section> 
+
+    <section class="secciones" id="sectionContador">
+        <h1 class="titulos" id="tituloContador"> CONTADOR </h1>  
+
+        <div class="contenedores" id="contador">  </div>
+
+        <div id="divBotonesContenedor">
+            <button class="botonesContador" id="disminuir"> <img src="./assets/menos.png"  alt="button icon"> </button>
+            <button class="botonesContador" id="aumentar"> <img src="./assets/mas.png"  alt="button icon"> </button>
+        </div>
+            <button id="reiniciar"> REINICIAR </button>
+
+    </section>  
+    
+    <section class="secciones" id="sectionReloj">
+
+        <h1 class="titulos" id="tituloReloj"> RELOJ </h1>
+
+        <div class="contenedores" id="reloj"> </div>
+
+        <div id="divBotonesReloj"></div>
+
+    </section>
+
+    <section class="secciones" id="sectionCronometro">
+
+        <h1 class="titulos" id="tituloCronometro"> CRONÓMETRO </h1> 
+
+        <div class="contenedores" id="cronometro">
+            <span id="horas">00</span>:
+            <span id="minutos">00</span>:
+            <span id="segundos">00</span>
+        </div>
+
+        <div id="divBotonesCronometro">
+          <button class="botonesCronometro" id="botonIniciar">Iniciar</button>
+          <button class="botonesCronometro" id="botonDetener">Detener</button>
+          <button class="botonesCronometro" id="botonResetear">Reiniciar</button>
+        </div>
+        
+    </section>    
+
+    <script src="miniproyecto.js"></script>
+</body>
+</html>
