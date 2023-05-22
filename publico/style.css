@@ -9,18 +9,49 @@ body
     align-items: center;
 }
 
+#tituloSesion
+{
+    display: flex;
+    flex-direction: column;
+    font-family:'Orbitron';    
+    color:#00337C;
+    align-items: center
+}
+
+#botonConfirmar
+{
+    height: 25px;
+    width: 250px;
+    background-color: #6ECB63;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    margin: 8px;
+}
+
+#nombreUsuario
+{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(205, 230, 252);
+}
+
+#usuario
+{
+    display: flex;
+    width: 98vw;
+    height: 5px;
+    font-family: system-ui;
+    font-size: 23px;
+}
+
+
+
 #seleccionarHerramienta
 {
     font-family:'Orbitron';
     color:#00337C;
-}
-
-#sectionHerramientas
-{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
 }
 
 .secciones 
@@ -37,7 +68,8 @@ body
     font-family:'Orbitron';
     color:#00337C;
     font-size: 100px;
-    margin-top: 35px;
+    padding: 10px;
+    margin: auto;
 }
 
 .contenedores 
@@ -102,6 +134,7 @@ body
     margin-right: 55px;
     font-size: 18px;
     border: 1px solid #EEEEEE;
+    margin-top: 10px;
 }
 
 .botonesCronometro
@@ -126,3 +159,76 @@ body
 {
     display: flex;
 }
+
+@media (max-width: 600px)
+{
+    .secciones
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nombreUsuario
+    {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tituloSesion
+    {
+        display: flex;
+        font-size: 18px;
+    }
+
+    #divUtilidades
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        height: 150px;
+        width: 150px;     
+    }
+
+    .titulos
+    {
+        font-size: 45px;
+        height: 80px;
+    }
+
+    .contenedores
+    {
+        width: 360px;
+        height: 180px;
+        border: 10px;
+    }
+
+    .botonesUtilidad
+    {
+        margin-right: 0px;
+    }
+
+    #reloj
+    {
+        font-size: 60px;
+    }
+
+    #cronometro
+    {
+        font-size: 60px;
+    }
+
+    #divBotonesCronometro
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botonesCronometro
+    {
+        margin: 4px;
+    }
+}
+

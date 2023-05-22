@@ -6,36 +6,26 @@ const sectionHerramientas = document.getElementById("sectionHerramientas")
 document.getElementById("botonConfirmar").addEventListener('click', obtenerUsuario)
 const inicioUsuario = document.getElementById("usuario")
 const elementoUsuario = document.getElementById("nombreUsuario")
-const valorUsuario = elementoUsuario.value
-console.log(valorUsuario)
+usuarios = []
 
-fetch('http://localhost:3000/datos')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)      // 12345
-  })
+
 
 function obtenerUsuario()
 {
-  fetch('/usuario', {
+  const valorUsuario = elementoUsuario.value
+  inicioUsuario.innerHTML = "USUARIO: " + valorUsuario + " 🟢"
+  usuarios.push(valorUsuario)
+  console.log(usuarios)
+
+  fetch(`http://192.168.0.17:3000/usuarios/${valorUsuario}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ valorUsuario: valorUsuario })
+    body: JSON.stringify({ valorUsuario })
   })
-  .then(function(response) {
-    // Maneja la respuesta del servidor
-    if (response.ok) {
-      alert('Nombre de usuario enviado exitosamente');
-    } else {
-      alert('Error al enviar el nombre de usuario');
-    }
-  })
-  .catch(function(error) {
-    console.error('Error:', error);
-  }); 
-};
+}
+
 
 
 
